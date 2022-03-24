@@ -415,7 +415,7 @@
   border-color: #ffffff;
   border-style: solid;
   background-color: #ffffff;
-  padding: 0 10px 0 10px;
+  padding: 0 8px 0 8px;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
@@ -675,13 +675,13 @@ html {
 
   .header-nav {
     display: flex;
-    min-height: 100vh;
+    z-index: -1000;
   }
 
   .header-nav ul {
     width: 75%;
     margin: auto;
-    bottom: 10vh;
+    top: 10vh;
     margin-bottom: 3vh;
   }
 
@@ -691,7 +691,8 @@ html {
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(8px);
-    height: 75vh;
+    -webkit-backdrop-filter: blur(8px);
+    height: 50vh;
     flex-direction: column;
     border-radius: 15px;
     box-shadow: rgba(147, 255, 242, 0.4) 5px 5px,
@@ -701,7 +702,7 @@ html {
       rgba(185, 183, 183, 0.068) -3px -3px 6px 1px inset;
     clip-path: circle(10px at 50% -10%);
     -webkit-clip-path: circle(10px at 50% -10%);
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
   }
 
   .nav-links li {
@@ -739,6 +740,7 @@ html {
     margin-top: 130px;
     align-items: center;
     text-align: center;
+    pointer-events: auto;
   }
 
   .cover {
@@ -751,7 +753,12 @@ html {
   }
 
   .cta {
-    margin-top: 5px;
+    position: absolute;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: -5%;
+    padding: 0;
+    width: 100%;
   }
 
   .projetos {
@@ -856,20 +863,22 @@ html {
     margin: 0;
     display: block;
     position: relative;
-    margin-top: 80px;
-    z-index: 1;
+    margin-top: 7vh;
   }
 
   .sumicity-intro img {
-    width: 90%;
+    width: 80%;
   }
 
   .sumicity-intro {
     width: 100%;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0;
+    margin-bottom: -20vh;
+    padding-top: 0;
   }
 
   .sumicity-intro p {
@@ -883,7 +892,7 @@ html {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 23vh;
+    margin-top: -20vh;
   }
   .sumicity-visaogeral h2 {
     text-align: center;
