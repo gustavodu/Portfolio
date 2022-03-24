@@ -1027,9 +1027,18 @@ html {
   /* CONTATO */
 
   .contato-sect {
-    z-index: 1;
+    position: absolute;
     margin-top: 130px;
     min-height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contato-text {
+    margin: 0 10%;
+    text-align: center;
   }
 
   .contato-btn {
