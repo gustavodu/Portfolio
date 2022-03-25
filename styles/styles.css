@@ -773,7 +773,7 @@ html {
     justify-content: center;
     flex-direction: column;
     display: block;
-    bottom: 0;
+    bottom: 15vh;
   }
 
   .projIMG {
